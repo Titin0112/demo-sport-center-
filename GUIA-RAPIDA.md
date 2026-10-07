@@ -1,0 +1,39 @@
+# Guía rápida · Sport Center
+
+## Abrir la demo
+
+Para compartirla con amigos o publicarla mediante Netlify Drop, empieza por `LEEME-PRIMERO.txt`. Incluye datos de ejemplo y los pasos para obtener un enlace público.
+
+Abre `index.html` en el navegador. Las estadísticas de reservas, ventas y partidos parten en cero. Si ya usabas la versión anterior en este navegador, se conservan las cuentas, los puntos, embajadores, inventario y tarifas; las reservas, ventas, bloqueos y resultados anteriores no se mezclan con las estadísticas nuevas. La versión anterior queda guardada localmente. Los datos nuevos permanecen en ese navegador y perfil; cambiar de computador o navegador puede mostrar una base distinta.
+
+Sport Center cuenta con tres canchas de pádel. Tarifas por cancha: horario bajo (09:00–18:00), 1,5 h $14.990 y 2 h $18.990; horario alto (18:00–00:00), 1,5 h $19.990 y 2 h $24.990. Si la reserva cruza las 18:00, el precio se prorratea según los minutos en cada franja. Para 1,5 h: al iniciar a las 17:30 se cobran 30 minutos bajos ($4.997) + 60 minutos altos ($13.327), total $18.324; al iniciar a las 17:00 se cobran 60 minutos bajos ($9.993) + 30 minutos altos ($6.663), total $16.656. Administración permite editar los cuatro valores.
+
+La página ofrece un acceso directo a WhatsApp de reservas: +56 9 7518 0031, tomado del aviso de precios del club.
+
+## Administración
+
+1. Entra en **Administración** con `admin@sportcenterrengo.cl` / `admin123`.
+2. En **Inventario**, agrega cada producto con su precio y stock (por ejemplo, Gatorade, bebida en lata, papas o barra de cereal).
+3. En **Embajadores**, asocia el RUT de cada cliente. Puedes elegir una cuenta que ya exista o asociar un RUT antes de que la persona se registre.
+4. Para crear reservas, usa **Reservas → Nueva reserva** o la página **Inicio → Reservar cancha**. En Administración, el selector muestra el horario completo hasta el cierre; las horas ocupadas, bloqueadas o pasadas aparecen deshabilitadas. La hora se actualiza al cambiar fecha, cancha o duración. Al escribir el nombre de una cuenta existente, el teléfono y RUT se completan automáticamente y la reserva queda ligada a esa cuenta. Puedes indicar un RUT deudor distinto.
+5. Al cobrar, registra el RUT de quien paga: sus puntos se actualizan con ese RUT. El saldo restante sigue asignado al RUT del deudor. El monto se puede editar para cobrar por partes; se sugiere un cuarto de cancha.
+6. Usa **+ Consumo** en una reserva para agregar productos y cobra cada consumo por separado. **Saldos** reúne los pendientes de reservas, consumos y cobros independientes; asigna o cambia el RUT deudor en la fila de la reserva. Para una deuda ajena a una reserva, usa **Registrar saldo independiente**. El pagador puede tener un RUT distinto y recibe los puntos.
+7. En **Reservas**, cada reserva activa muestra el botón **Añadir resultado** junto a las acciones de cobro y consumo. Úsalo cuando ya tengan el resultado del partido para ingresar los RUT de los cuatro jugadores, el resultado de la pareja y el marcador. Si cobras la cancha después del partido, también puedes marcar esa opción en el diálogo **Cobrar reserva**. Los resultados ya registrados se pueden corregir desde la fila de la reserva.
+8. En la parte superior del panel puedes descargar una copia JSON de los datos y restaurarla en este navegador. Restaurar reemplaza todos los datos guardados actualmente. El respaldo puede incluir RUT, teléfonos, correos y contraseñas de demostración; guárdalo en un lugar privado y no lo compartas.
+
+El reporte de productos combina las ventas de mostrador con los consumos agregados a reservas; los artículos devueltos al inventario al cancelar quedan fuera. Si una reserva ya tiene un pago aplicado (incluido un canje de puntos), Administración puede corregir el nombre o teléfono, pero no cambiar cancha, horario o fecha y dejar los pagos anteriores intactos. Para mover una reserva con pagos, coordina la cancelación y la nueva reserva considerando que este prototipo no procesa devoluciones de dinero.
+
+Si ya hubo un abono en dinero, el cliente debe coordinar la cancelación con el club; este prototipo no registra devoluciones en dinero. Los puntos canjeados en la cancha se devuelven al cancelar. Los consumos no cobrados vuelven al inventario.
+
+## Puntos y embajadores
+
+- Se acredita 1 punto por cada $100 efectivamente pagados. Si una persona reserva como invitada y luego se registra con el mismo RUT o correo, la reserva aparece en su cuenta.
+- El canje configurado es 1 punto = $100. El cliente puede usarlos en una reserva; Administración puede aplicarlos al cobrar una cancha, un consumo de reserva o una compra del inventario. En el punto de venta se usan los puntos disponibles hasta donde alcance el saldo y el resto se cobra en efectivo, tarjeta o transferencia. No se canjean puntos por un importe menor a $100.
+- El RUT del pago recibe los puntos. Si aún no tiene cuenta, los puntos quedan asociados a ese RUT para cuando se registre.
+- El embajador registrado recibe automáticamente, desde que se crea la reserva, el descuento equivalente a un cuarto del precio de cancha (con tope de $5.000). La meta es de 2 reservas semanales. La reserva cuenta cuando el valor de la cancha queda pagado por completo; los consumos se cobran aparte y las canceladas no cuentan. El contador usa la fecha reservada. Administración permite editar metas y premios mensuales (por defecto: 14 reservas = polerón; 18 = gift card de $25.000; 22 = $30.000 en la tienda) y muestra la tabla de posiciones.
+- **Inicio** muestra saludo, puntos disponibles, nivel Sport Center y próximas reservas. Mi cuenta muestra el saldo pendiente del RUT deudor y el detalle de cada cargo, aunque la reserva la haya hecho otra persona. El registro solicita nombre, teléfono y RUT. No permite repetir correo (ignora mayúsculas y espacios), RUT (ignora puntos y guion) ni teléfono (compara los dígitos y normaliza el prefijo +56). El nivel Sport Center parte en 1,0 para todos, en una escala de 0 a 7. Administración registra o corrige resultados amistosos con los cuatro RUT; el sistema compara los niveles promedio, el resultado y el marcador, con confianza inicial de 20% que aumenta 5 puntos por partido hasta 100%. Categorías: 0,0–0,9 Inicial; 1,0–1,9 Principiante; 2,0–2,9 Intermedio; 3,0–3,9 Intermedio alto; 4,0–4,9 Avanzado; 5,0–5,9 Competitivo; 6,0–7,0 Élite. Corregir un partido recalcula los resultados y niveles posteriores.
+- Al confirmar una reserva, el botón de correo prepara un mensaje dirigido al correo de la cuenta (o al correo ingresado por un invitado), con los datos de la reserva. Hay que pulsar Enviar en la aplicación de correo. Para automatizarlo con la cuenta del club hay que elegir Gmail u Outlook, registrar la aplicación y autorizarla: Gmail usa OAuth y el permiso `gmail.send`; Outlook usa Microsoft Graph con `Mail.Send`. La autorización y el envío deben pasar por un servidor; no pongas contraseñas ni tokens en esta página. Consulta la [guía oficial de envío de Gmail](https://developers.google.com/workspace/gmail/api/guides/sending) y la [documentación oficial de sendMail de Microsoft Graph](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0).
+
+## Límites
+
+Es un prototipo local: no tiene servidor, autenticación segura, respaldo automático ni conexión real de reservas o pagos con Sport Center. Las cuentas y contraseñas de demostración se guardan en el navegador; no reutilices contraseñas personales. Los respaldos incluyen datos de las cuentas, por lo que deben guardarse en privado. Los horarios, precios y disponibilidad no se notifican al club; tampoco envía correos automáticamente. La portada y la galería usan las tres fotos reales de Sport Center que enviaste. La foto de portada se comprimió para cargar más rápido, conservando sus dimensiones y encuadre. La página usa la foto original del logo, sin modificarla.

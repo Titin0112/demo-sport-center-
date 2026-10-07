@@ -1,0 +1,87 @@
+SPORT CENTER — DEMO PARA AMIGOS
+
+Esta es una prueba. Las reservas NO son reales, no llegan al club y no se comparten
+entre personas. Publicarla con un enlace no cambia esa limitación.
+
+ABRIR EN UN COMPUTADOR
+1. Descomprime el ZIP. En Mac basta con hacer doble clic; en Windows usa Extraer todo.
+2. Abre la carpeta demo-reservas-sport-center.
+3. Haz doble clic en index.html. Puedes abrirlo con una versión actual de Chrome,
+   Safari, Edge o Firefox. Conserva juntos todos los archivos y la carpeta assets.
+4. Si no guarda las pruebas, abre el enlace publicado en un navegador normal.
+
+DATOS DE EJEMPLO PARA LA PRUEBA
+Nombre: Amigo de prueba
+Correo: prueba@example.com
+RUT: 11.111.111-1
+Teléfono: 900000000
+Contraseña de prueba: DemoSport2026!
+Usa estos datos solo para probar la demo. No hacen falta datos personales.
+Cada amigo puede usar el mismo ejemplo porque sus datos quedan en su navegador.
+Si ya creaste esa cuenta en tu navegador, pulsa Ingresar en lugar de crearla otra vez.
+
+QUÉ PROBAR (5 A 10 MINUTOS)
+1. En Ingresar, pulsa Crear una cuenta nueva y completa el formulario.
+2. En Inicio, elige un día de los próximos siete días, una cancha y un horario libre.
+3. Confirma la reserva y comprueba que aparezca en Mi cuenta.
+4. Vuelve a Inicio: revisa el saludo, tus próximas reservas, tu nivel y tus puntos.
+5. Recarga la página: la cuenta y la reserva deberían seguir allí.
+
+POR QUÉ LOS PUNTOS PUEDEN MOSTRAR 0
+Crear una cuenta o reservar no da puntos. Se suma un punto por cada $100 que
+Administración registra como pagados en ESTE mismo navegador.
+Si quieres probarlo: entra a Administración con admin@sportcenterrengo.cl / admin123,
+abre Reservas, pulsa Cobrar cancha, usa el RUT del ejemplo y registra 1000 pesos en
+Efectivo. Pulsa Guardar. En Mi cuenta deben aparecer 10 puntos y la deuda bajar $1000.
+Es una simulación, no se mueve dinero. No uses el acceso de demo con datos reales.
+
+PUBLICAR CON UN ENLACE (RECOMENDADO: NETLIFY DROP)
+1. Crea tu cuenta e inicia sesión en https://app.netlify.com/signup . Elige Free
+   si te pide escoger un plan. No necesitas comprar un dominio para esta prueba.
+2. En otra pestaña, abre https://app.netlify.com/drop .
+3. Arrastra la carpeta demo-reservas-sport-center completa al espacio para subirla.
+   Al abrir esa carpeta debes ver index.html directamente, no otra carpeta anidada.
+4. Espera a que termine la subida. Verás la dirección principal que termina en
+   .netlify.app. Si aparece Make public, púlsalo y completa la confirmación.
+5. Si el sitio sigue privado, entra a Project configuration > General > Visitor
+   access > Project visibility. Elige Public para production deploys y guarda.
+6. Abre la dirección principal en una ventana privada: debe aparecer Sport Center
+   sin pedirte una cuenta de Netlify. Esa es la dirección que enviarás a tus amigos.
+7. Para actualizarla después, entra al MISMO proyecto, abre Deploys y arrastra la
+   carpeta actualizada al espacio de subida. Así conservas el enlace.
+Si no encuentras la zona para subir: Projects > Add new project > Deploy manually.
+
+El plan Free tiene un límite mensual de uso. Si se alcanza, el sitio puede pausarse.
+No elijas un plan de pago para esta prueba si quieres mantenerla gratuita.
+
+LIMITACIONES QUE HAY QUE AVISAR
+- Las reservas de tus amigos no aparecerán en tu Administración.
+- Cambiar de computador, navegador o dirección web crea otra copia independiente.
+- Borrar datos del navegador elimina las pruebas. El modo privado no es para guardarlas.
+- No se envían correos automáticamente. El botón de correo abre la aplicación de
+  correo de la persona; no es un envío desde Sport Center. No envíes ese correo de prueba.
+- No hay pagos reales, recuperación de contraseña ni una protección de cuentas
+  adecuada para clientes reales. Usa solo los datos de ejemplo.
+- El enlace de WhatsApp del club sí abre un contacto real: no mandes mensajes de prueba.
+- En el teléfono, abre el enlace en Safari o Chrome; el navegador dentro de otra app
+  puede no conservar los datos igual.
+
+MENSAJE PARA WHATSAPP
+Hola! ¿Me ayudas a probar la demo de Sport Center? Entra aquí: [PEGA EL ENLACE].
+Crea una cuenta con los datos de ejemplo que aparecen arriba, reserva una cancha y
+revisa Mi cuenta y tus puntos (al principio estarán en 0). Son pruebas: las reservas
+no son reales ni me llegan a mí. Si algo falla, mándame una captura y dime qué hiciste.
+
+PREGUNTAS PARA OPINIONES
+1. ¿Qué parte te confundió o te hizo detenerte?
+2. ¿Lograste crear tu cuenta y reservar? Si algo falló, ¿en qué paso?
+3. ¿Se entienden el precio, el saldo y los puntos?
+4. ¿Qué cambiarías primero para que fuera más fácil de usar?
+5. Cuando funcione con reservas reales, ¿la usarías? ¿Qué te faltaría para confiar en ella?
+Junto a las respuestas, indica si probaste en celular o computador y en qué navegador.
+
+FUENTES OFICIALES DE LOS PASOS DE PUBLICACIÓN
+https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/
+https://docs.netlify.com/manage/projects/add-new-project/
+https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/
+https://www.netlify.com/pricing/
